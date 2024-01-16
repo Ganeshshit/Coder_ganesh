@@ -52,11 +52,11 @@ const About = () => {
                         </div>
                         <div className='col-span-3 relative h-max rounded-2xl border-2   border-spacing-9 border-dotted  border-red-300  border-t-amber-200 p-8 w-60 bg-light pb-6 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8 ml-9'>
                             <div className=' absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-black  dark:bg-light' />
-                            <Image src={AboutPic} alt='ganesh' className=' w-full h-auto rounded-2xl' />
+                            <Image src={AboutPic} alt='ganesh' className=' w-full h-auto rounded-2xl ' />
                         </div>
                         <div className=' col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 sm:mt-5 md:mt-5 xl:mt-5'>
                             <div className=' flex flex-col items-end justify-center xl:items-center'>
-                                <span className=' inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl mt-5'>
+                                <span className=' inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl '>
                                     <AnimatedNumbers value={50} />+
                                 </span>
                                 <h2 className=' text-xl font-medium capitalize text-dark/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>satisfied clients</h2>
@@ -76,7 +76,7 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
-                    <Experience />
+                    <Experience/>
                 </Layout>
             </main>
         </>
