@@ -26,9 +26,9 @@ const Experience = () => {
       <div className="w-[75%] mx-auto relative ">
         <ul>
           <Details
-            position={"Software Engineer"}
-            company={"@Google"}
-            time={"2022-Present"}
+            position={"Web Developer"}
+            company={"Zetpeak"}
+            time={"June 2023-September 2023"}
           />
         </ul>
       </div>

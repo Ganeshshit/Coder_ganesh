@@ -27,9 +27,10 @@ export default function Home() {
             <div className=" w-1/2 md:w-full" >
               <Image src={profilePic} alt="ganesh Shit" className=" w-full/2 h-auto lg:hidden md:inline-block md:w-full " />
             </div>
-            <div className=" w-1/2 flex flex-col items-center self-center">
+            <div className=" w-1/2 flex flex-col items-center self-center xs:w-full ">
               <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left
-              xl:text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
+              xl:text-5xl lg:!text-center lg:!text-7xl sm:!text-4xl xs:!text-xl
+              
               "
               />
               <p className=" my-4 text-base font-medium md:text-sm sm:text-xs">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.
