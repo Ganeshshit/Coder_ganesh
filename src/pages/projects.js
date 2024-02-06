@@ -11,6 +11,7 @@ import project1 from "../../public/images/projects/noteapp.png";
 import project2 from "../../public/images/projects/weather_time.png";
 import project3 from "../../public/images/projects/music.png";
 import Bitcoin from "../../public/images/projects/BitcoinBaat.png";
+import Shopito from "../../public/images/projects/Shopito.png";
 
 const FeaturedProject = ({
   type,
@@ -83,22 +84,22 @@ const FeaturedProject = ({
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className=" w-full flex  items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative ">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark" />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark " />
       <Link
         href={link}
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg
-        
-      "
+        className="w-full cursor-pointer overflow-hidden rounded-lg sm:w-1/2 sm:h-2/3 xs:w-1/2 xs:h-3/4"
       >
         <FramerImage
           src={img}
           alt="title"
-          className="w-full h-auto"
+          className="w-full h-auto sm:w-70 sm:h-60"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          
         />
       </Link>
+      <div />
       <div className=" w-full flex flex-col items-start justify-between mt-4">
         <span className=" text-primary font-medium text-xl">{type}</span>
         <Link
@@ -153,32 +154,31 @@ const Projects = () => {
                 techStackName="React, Meterial UI ,React Charting Library,CoinGekoAPI"
               />
             </div>
-            {/* <div className=""> */}
             <div className=" col-span-6 sm:visible">
-                <Project
-                  title="Bitcoint Update"
-                  img={Bitcoin}
-                  link="https://ganeshshit.github.io/weather_time1/"
-                  github="https://github.com/Ganeshshit/notes"
-                />
-              </div>
-              <div className=" col-span-6 flex ">
-                <Project
-                  title="Note App"
-                  img={project1}
-                  link="https://ganeshshit.github.io/notes/"
-                  github="https://github.com/Ganeshshit/notes"
-                />
-              </div>
-              <div className=" col-span-6">
-                <Project
-                  title="Weather App"
-                  img={project2}
-                  link="https://ganeshshit.github.io/weather_time1/"
-                  github="https://github.com/Ganeshshit/notes"
-                />
-              </div>
-            {/* </div> */}
+              <Project
+                title="Shopito"
+                img={Shopito}
+                link="https://shopito.vercel.app/"
+                github="https://github.com/Ganeshshit/Shopito"
+              />
+            </div>
+            <div className=" col-span-6 flex ">
+              <Project
+                title="Note App"
+                img={project1}
+                link="https://ganeshshit.github.io/notes/"
+                github="https://github.com/Ganeshshit/notes"
+              />
+            </div>
+            <div className=" col-span-6">
+              <Project
+                title="Weather App"
+                img={project2}
+                link="https://ganeshshit.github.io/weather_time1/"
+                github="https://github.com/Ganeshshit/notes"
+              />
+            </div>
+
             <div className=" col-span-12"></div>
           </div>
         </Layout>
