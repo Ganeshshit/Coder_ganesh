@@ -3,7 +3,12 @@ import { Inter } from "next/font/google"
 import { Component } from "react"
 import Layout from "@/components/Layout"
 import Image from "next/image"
-import profilePic from "../../public/images/profile/ganehsdeveloper2.png";
+// import profilePic from "../../public/images/profile/ganehsdeveloper2.png";
+// import profilePic from "../../public/images/profile/developer.png";
+import profilePic from "../../public/images/profile/devloper.png";
+
+
+
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 import { motion } from "framer-motion"
 import AnimatedText from "@/components/AnimatedText"
