@@ -11,6 +11,7 @@ import {
   Instaicon,
   SunIcon,
   MoonIcon,
+  Xicon
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
@@ -103,16 +104,19 @@ const NavBar = () => {
         </nav>
         <nav className="flex  items-center justify-center flex-wrap-reverse">
           <motion.a
-            href="https://"
+            href="https://x.com/shit8_shit"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mr-3"
           >
-            <TwitterIcon />
+            {/* <TwitterIcon /> */}
+            
+           <i className=" text-lg  font-extrabold">X</i>
+            
           </motion.a>
           <motion.a
-            href="https://"
+            href="https://github.com/ganeshshit"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -121,7 +125,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://"
+            href="https://www.linkedin.com/in/ganesh-shit-957246243/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
