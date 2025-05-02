@@ -21,11 +21,29 @@ darkMode:'class',
       primaryDark: "#58E6D9", // 80,230,217
     },
     animation:{
-      'spin-slow':'spin 8s linear infinite'
+      'spin-slow':'spin 8s linear infinite',
+      'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      'ping': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite'
+    },
+    animationDelay: {
+      '2000': '2000ms',
     },
     backgroundImage:{
       circularLight:' repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px ,#f5f5f5 100px);',
-      circularDark:' repeating-radial-gradient(rgba(234,156,190,0.9) 2px, #1b1b1b  5px ,#1b1b1b 100px);'
+      circularDark:' repeating-radial-gradient(rgba(234,156,190,0.9) 2px, #1b1b1b  5px ,#1b1b1b 100px);',
+
+      circularLightLg:' repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px ,#f5f5f5 80px);',
+      circularDarkLg:' repeating-radial-gradient(rgba(234,156,190,0.9) 2px, #1b1b1b  5px ,#1b1b1b 80px);',
+
+      circularLightMd:' repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px ,#f5f5f5 60px);',
+      circularDarkMd:' repeating-radial-gradient(rgba(234,156,190,0.9) 2px, #1b1b1b  5px ,#1b1b1b 60px);',
+
+      circularLightSm:' repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px ,#f5f5f5 40px);',
+      circularDarkSm:' repeating-radial-gradient(rgba(234,156,190,0.9) 2px, #1b1b1b  5px ,#1b1b1b 40px);'
+    },
+    boxShadow: {
+      'custom': '0 10px 30px -10px rgba(0, 0, 0, 0.3)',
+      'custom-dark': '0 10px 30px -10px rgba(255, 255, 255, 0.1)'
     }
   },
 

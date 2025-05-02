@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 const useThemeSwitcher = () => {
-    const preferDarkQuery = "(prfer-color-scheme:dark)";
+    const preferDarkQuery = "(prefers-color-scheme:dark)";
     const [mode, setMode] = useState("");
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery);
@@ -20,7 +20,7 @@ const useThemeSwitcher = () => {
             } else {
                 let check = mediaQuery.matches ? "dark" : "light";
                 setMode(check);
-                if (check) {
+                if (check === "dark") {
                     document.documentElement.classList.add("dark")
                 }
                 else {
