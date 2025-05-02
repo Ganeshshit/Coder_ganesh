@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -27,7 +28,7 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial, isActive }) => {
   return (
-    <motion.div 
+    <motion.div
       className={`absolute top-0 left-0 w-full h-full flex flex-col justify-center p-10 bg-light dark:bg-dark rounded-2xl border border-solid border-dark dark:border-light shadow-xl
         ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
       initial={{ opacity: 0, x: 100 }}
@@ -37,21 +38,23 @@ const TestimonialCard = ({ testimonial, isActive }) => {
       <div className="flex flex-col items-center text-center">
         <div className="relative mb-6">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-primary dark:border-primaryDark">
-            <img 
-              src={testimonial.image} 
-              alt={testimonial.name} 
+            <Image
+              src={testimonial.image}
+              alt={testimonial.name}
               className="w-full h-full object-cover"
+              width={80}
+              height={80}
             />
           </div>
           <div className="absolute -bottom-2 -right-2 text-4xl">
-            "
+            &ldquo;
           </div>
         </div>
-        
+
         <p className="text-lg italic text-dark/90 dark:text-light/90 mb-6">
-          "{testimonial.text}"
+          &ldquo;{testimonial.text}&rdquo;
         </p>
-        
+
         <div>
           <h4 className="font-bold text-dark dark:text-light">{testimonial.name}</h4>
           <p className="text-primary dark:text-primaryDark">{testimonial.position}</p>
@@ -63,37 +66,37 @@ const TestimonialCard = ({ testimonial, isActive }) => {
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   const nextTestimonial = () => {
     setActiveIndex((prev) => (prev + 1) % testimonials.length);
   };
-  
+
   const prevTestimonial = () => {
     setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
-  
+
   return (
     <div className="my-32">
       <h2 className="font-bold text-8xl mb-16 w-full text-center text-dark dark:text-light lg:!text-7xl sm:!text-6xl xs:!text-4xl">
         Testimonials
       </h2>
-      
+
       <div className="relative w-full max-w-3xl mx-auto h-[400px] md:h-[450px] sm:h-[500px]">
         {testimonials.map((testimonial, index) => (
-          <TestimonialCard 
+          <TestimonialCard
             key={testimonial.id}
             testimonial={testimonial}
             isActive={index === activeIndex}
           />
         ))}
-        
+
         <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-4 z-20">
           {testimonials.map((_, index) => (
             <button
               key={index}
               className={`w-3 h-3 rounded-full ${
-                index === activeIndex 
-                  ? 'bg-primary dark:bg-primaryDark' 
+                index === activeIndex
+                  ? 'bg-primary dark:bg-primaryDark'
                   : 'bg-dark/30 dark:bg-light/30'
               }`}
               onClick={() => setActiveIndex(index)}
@@ -101,7 +104,7 @@ const Testimonials = () => {
             />
           ))}
         </div>
-        
+
         <button
           className="absolute top-1/2 -left-12 -translate-y-1/2 w-10 h-10 rounded-full bg-dark text-light dark:bg-light dark:text-dark flex items-center justify-center z-20 md:-left-6"
           onClick={prevTestimonial}
@@ -109,7 +112,7 @@ const Testimonials = () => {
         >
           ←
         </button>
-        
+
         <button
           className="absolute top-1/2 -right-12 -translate-y-1/2 w-10 h-10 rounded-full bg-dark text-light dark:bg-light dark:text-dark flex items-center justify-center z-20 md:-right-6"
           onClick={nextTestimonial}
