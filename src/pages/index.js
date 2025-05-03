@@ -123,7 +123,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-primary dark:bg-primaryDark mr-3"></div>
-                    <span>Read my <Link href="/articals" className="text-dark dark:text-light font-medium underline decoration-primary/30 dark:decoration-primaryDark/30 underline-offset-4 hover:decoration-primary dark:hover:decoration-primaryDark transition-all">articles</Link> on web development trends</span>
+                    <span>Read my <Link href="/articles" className="text-dark dark:text-light font-medium underline decoration-primary/30 dark:decoration-primaryDark/30 underline-offset-4 hover:decoration-primary dark:hover:decoration-primaryDark transition-all">articles</Link> on web development trends</span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 rounded-full bg-primary dark:bg-primaryDark mr-3"></div>

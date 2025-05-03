@@ -63,7 +63,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
           {href === "/" && "🏠"}
           {href === "/about" && "👤"}
           {href === "/projects" && "💻"}
-          {href === "/articals" && "📝"}
+          {href === "/articles" && "📝"}
         </span>
 
         <span>{title}</span>
@@ -131,7 +131,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" />
           <CustomLink href="/about" title="About" />
           <CustomLink href="/projects" title="Projects" />
-          <CustomLink href="/articals" title="Articles" />
+          <CustomLink href="/articles" title="Articles" />
         </nav>
 
         <nav className="flex items-center justify-center gap-4 bg-light/30 dark:bg-dark/30 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm">
@@ -234,7 +234,7 @@ const NavBar = () => {
                 className="w-full"
               />
               <CustomMobileLink
-                href="/articals"
+                href="/articles"
                 title="Articles"
                 toggle={handleClick}
                 className="w-full"
