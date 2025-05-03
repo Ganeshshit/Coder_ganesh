@@ -67,7 +67,7 @@ const About = () => {
                   passion for creating beautiful, functional, and user-centered
                   digital experiences. With 4 years of experience in the field, I
                   am always looking for new and innovative ways to bring my
-                  clients' visions to life.
+                  clients&apos; visions to life.
                 </p>
 
                 <p className="font-medium text-lg text-dark dark:text-light md:text-base sm:text-sm">
@@ -77,7 +77,7 @@ const About = () => {
                 </p>
 
                 <p className="font-medium text-lg text-dark dark:text-light md:text-base sm:text-sm">
-                  Whether I'm working on a website, mobile app, or other digital
+                  Whether I&apos;m working on a website, mobile app, or other digital
                   product, I bring my commitment to design excellence and
                   user-centered thinking to every project I work on. I look
                   forward to the opportunity to bring my skills and passion to
