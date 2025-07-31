@@ -73,7 +73,15 @@ const Experience = () => {
             position="Web Developer Intern"
             company="TechVritti"
             companyLink="https://techvritti.com"
-            time="March 2025 - Present"
+            time="March 2025 - June 2025"
+            address="Bengalore India"
+            work="Assisted in developing and maintaining client websites, learned modern web development practices, and collaborated with senior developers on various projects."
+          />
+          <Details
+            position="Jr Developer"
+            company="Medini Technology"
+            companyLink="https://medini.in"
+            time="June 2025 - Present"
             address="Bengalore India"
             work="Assisted in developing and maintaining client websites, learned modern web development practices, and collaborated with senior developers on various projects."
           />
