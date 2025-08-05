@@ -12,6 +12,7 @@ import project3 from "../../public/images/projects/music.png";
 import Bitcoin from "../../public/images/projects/BitcoinBaat.png";
 import Shopito from "../../public/images/projects/Shopito.png";
 import InterviewPro from "../../public/images/projects/interviewpro.png";
+import Task from "../../public/images/projects/task.png";
 
 const FeaturedProject = ({
   type,
@@ -99,7 +100,7 @@ const FeaturedProject = ({
                   </svg>
                 </div>
                 <span className="font-bold text-light dark:text-dark text-xs">
-                  {isPrimary ? "InterviewPro" : "CryptoDash"}
+                  {isPrimary ? "InterviewPro" : "Task"}
                 </span>
               </div>
             </div>
@@ -343,6 +344,17 @@ const Projects = () => {
               techStackName="React, Material UI, React Charting Library, CoinGecko API"
               isInterviewPro={false}
             />
+            <FeaturedProject
+              type="Task Management"
+              title="Task Management"
+              summary="A task management app built with React and Material-UI. It allows users to create, edit, and delete tasks. It also allows users to mark tasks as complete and filter tasks by status. "
+              img={Task}
+              link="https://taskmanagement-lime.vercel.app/"
+              github="https://github.com/Ganeshshit/deshboard"
+              techStack="Tech Stack"
+              techStackName="React, Material UI"
+              isInterviewPro={false}
+            />
           </section>
 
           {/* Other Projects Section */}
@@ -362,7 +374,13 @@ const Projects = () => {
                 link="https://shopito.vercel.app/"
                 github="https://github.com/Ganeshshit/Shopito"
               />
-
+              <Project
+                type="Task Management"
+                title="Task Management"
+                img={Task}
+                link="https://taskmanagement-lime.vercel.app/"
+                // github="https://github.com/Ganeshshit/Shopito"
+              />
               <Project
                 type="Productivity"
                 title="Note App"
