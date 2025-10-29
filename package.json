@@ -23,6 +23,9 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.1"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "description": "![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;\r ![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;\r ![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />",
   "main": "next.config.js",
   "repository": {
