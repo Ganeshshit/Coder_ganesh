@@ -1,5 +1,11 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { FaFire, FaJsSquare, FaNode,FaGithub,FaFigma, FaPhone, FaMobile,FaReact,FaHtml5,FaCss3 } from "react-icons/fa"
+import { RiNextjsFill } from "react-icons/ri";
+
+
+import { SiMongodb, SiSocketdotio ,SiTailwindcss,SiTypescript} from "react-icons/si";
+
 
 // Skill icons
 const SkillIcon = ({ icon }) => (
@@ -11,31 +17,31 @@ const skillsData = [
   {
     category: "Frontend",
     skills: [
-      { name: "HTML", level: 90, icon: "🌐", color: "from-orange-500 to-red-500" },
-      { name: "CSS", level: 85, icon: "🎨", color: "from-blue-500 to-blue-600" },
-      { name: "JavaScript", level: 85, icon: "📜", color: "from-yellow-400 to-yellow-600" },
-      { name: "TypeScript", level: 75, icon: "🔷", color: "from-blue-600 to-blue-800" },
-      { name: "React.js", level: 90, icon: "⚛️", color: "from-cyan-400 to-blue-500" },
-      { name: "Next.js", level: 80, icon: "▲", color: "from-gray-700 to-black" },
-      { name: "Tailwind CSS", level: 85, icon: "🌊", color: "from-cyan-400 to-cyan-600" },
+      { name: "HTML", level: 90, icon: <FaHtml5 className="text-2xl" />, color: "from-orange-500 to-red-500" },
+      { name: "CSS", level: 85, icon: <FaCss3 className="text-2xl" />, color: "from-blue-500 to-blue-600" },
+      { name: "JavaScript", level: 85, icon: <FaJsSquare className="text-2xl" />, color: "from-yellow-400 to-yellow-600" },
+      { name: "TypeScript", level: 75, icon: <SiTypescript className="text-2xl" />, color: "from-blue-600 to-blue-800" },
+      { name: "React.js", level: 90, icon: <FaReact className="text-2xl" />, color: "from-cyan-400 to-blue-500" },
+      { name: "Next.js", level: 80, icon: <RiNextjsFill className="text-2xl" />, color: "from-gray-700 to-black" },
+      { name: "Tailwind CSS", level: 85, icon: <SiTailwindcss className="text-2xl" />, color: "from-cyan-400 to-cyan-600" },
     ]
   },
   {
     category: "Backend",
     skills: [
-      { name: "Node.js", level: 80, icon: "🟢", color: "from-green-500 to-green-700" },
-      { name: "Express.js", level: 75, icon: "🚂", color: "from-gray-600 to-gray-800" },
-      { name: "MongoDB", level: 70, icon: "🍃", color: "from-green-600 to-green-800" },
-      { name: "Firebase", level: 75, icon: "🔥", color: "from-yellow-500 to-orange-500" },
-      { name: "REST API", level: 85, icon: "🔌", color: "from-purple-500 to-purple-700" },
+      { name: "Node.js", level: 80, icon: <FaNode className="text-2xl" />, color: "from-green-500 to-green-700" },
+      { name: "Express.js", level: 75, icon: <FaJsSquare className="text-2xl" />, color: "from-gray-600 to-gray-800" },
+      { name: "MongoDB", level: 70, icon: <SiMongodb className="text-2xl" />, color: "from-green-600 to-green-800" },
+      { name: "Firebase", level: 75, icon: <FaFire className="text-2xl" />, color: "from-yellow-500 to-orange-500" },
+      { name: "REST API", level: 85, icon: <SiSocketdotio className="text-2xl" />, color: "from-purple-500 to-purple-700" },
     ]
   },
   {
     category: "Tools & Others",
     skills: [
-      { name: "Git", level: 85, icon: "📊", color: "from-red-500 to-red-700" },
-      { name: "UI/UX Design", level: 75, icon: "🎭", color: "from-pink-500 to-purple-500" },
-      { name: "Responsive Design", level: 90, icon: "📱", color: "from-indigo-500 to-indigo-700" },
+      { name: "Git", level: 85, icon: <FaGithub className="text-2xl" />, color: "from-red-500 to-red-700" },
+      { name: "UI/UX Design", level: 75, icon: <FaFigma className="text-2xl" />, color: "from-pink-500 to-purple-500" },
+      { name: "Responsive Design", level: 90, icon: <FaMobile className="text-2xl" />, color: "from-indigo-500 to-indigo-700" },
       { name: "Performance Optimization", level: 70, icon: "⚡", color: "from-amber-500 to-amber-700" },
     ]
   }
