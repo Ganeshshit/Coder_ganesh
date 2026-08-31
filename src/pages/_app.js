@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar"
 import "@/styles/globals.css"
 import { Inter, Montserrat } from "next/font/google"
 import About from "./about"
+import { Analytics } from '@vercel/analytics/react';
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -10,10 +11,13 @@ const montserrat = Montserrat({
 })
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
-    </main>
+    <>
+      <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
+        <NavBar />
+        <Component {...pageProps} />
+        <Footer />
+      </main>
+      <Analytics />
+    </>
   )
 }
